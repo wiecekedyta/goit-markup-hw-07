@@ -1,0 +1,33 @@
+.our-client-box {
+  padding: 94px 0;
+  &__grid {
+    display: flex;
+    gap: 30px;
+    &__icons {
+      list-style: none;
+      fill: var(--3fontcol);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__button {
+        border: 1px solid var(--3fontcol);
+        border-radius: 4px;
+        background-color: var(--1bgcol);
+        padding: 16px 32px;
+      }
+      &__button:hover {
+        fill: var(--1activecol);
+        cursor: pointer;
+        border-color: var(--1activecol);
+        transition: var(--slowmo);
+      }
+      &__button:focus {
+        fill: var(--1activecol);
+        cursor: pointer;
+        border-color: var(--1activecol);
+        outline: none;
+        transition: var(--slowmo);
+      }
+    }
+  }
+}

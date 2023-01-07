@@ -1,0 +1,163 @@
+.footer-box {
+  background-color: #2f303a;
+  padding: 60px 0;
+  .footer-style {
+    display: flex;
+    justify-content: left;
+    .logo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: var(--1activecol);
+      text-decoration: none;
+      &--bicolor {
+        color: #000;
+      }
+    }
+    .address-items {
+      margin-top: 20px;
+      & li {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--1bgcol);
+        margin-bottom: 9px;
+      }
+      &__contact-footer {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+      &__contact-footer:hover {
+        color: var(--1activecol);
+        transition: var(--slowmo);
+      }
+      &__contact-footer:focus {
+        color: var(--1activecol);
+        outline: none;
+        transition: var(--slowmo);
+      }
+    }
+    .footer-social {
+      padding-left: 70px;
+      &__header {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--1bgcol);
+        margin-bottom: 20px;
+      }
+      &__list {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        & li {
+          fill: var(--1bgcol);
+          list-style: none;
+          gap: 10px;
+        }
+        &__link {
+          padding: 12px 12px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          color: var(--1bgcol);
+          display: block;
+          &--icon {
+            display: block;
+            fill: currentColor;
+          }
+        }
+        &__link:hover {
+          color: var(--1bgcol);
+          background-color: var(--1activecol);
+          cursor: pointer;
+          transition: var(--slowmo);
+        }
+        &__link:focus {
+          color: var(--1bgcol);
+          background-color: var(--1activecol);
+          cursor: pointer;
+          outline: none;
+          transition: var(--slowmo);
+        }
+      }
+    }
+    .newsletter-box {
+      margin-left: 74px;
+      .newsletter-form {
+        display: flex;
+        gap: 12px;
+        align-items: flex-end;
+        &__header {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: var(--1bgcol);
+          width: 358px;
+        }
+        &__input {
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          border-radius: 4px;
+          background-color: var(--3bgcol);
+          color: rgba(255, 255, 255, 0.6);
+          padding: 15px;
+          margin-top: 20px;
+          margin-right: 12px;
+          width: 358px;
+          box-sizing: border-box;
+        }
+        &__input:focus,
+        &__input:active {
+          border: 1px solid var(--1activecol);
+          outline: none;
+          transition: var(--slowmo);
+        }
+        &__input:focus::placeholder,
+        &__input:active::placeholder {
+          color: var(--1activecol);
+          transition: var(--slowmo);
+        }
+        &__submit-button {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 0.06em;
+          color: var(--1bgcol);
+          background: var(--1activecol);
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 4px;
+          box-sizing: border-box;
+          height: 50px;
+          width: 200px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 42px;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          .newsletter-icon-send {
+            fill: var(--1bgcol);
+          }
+        }
+        &__submit-button:hover {
+          cursor: pointer;
+          transition: var(--slowmo);
+        }
+      }
+    }
+  }
+}
