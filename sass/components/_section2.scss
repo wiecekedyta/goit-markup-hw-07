@@ -9,7 +9,7 @@
     box-sizing: border-box;
     &__adventages-icons {
       padding: 25px 100px;
-      background-color: var(--2bgcol);
+      background-color: $secbgcol;
       margin-bottom: 30px;
       border-radius: 4px;
     }
@@ -24,7 +24,7 @@
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
-      color: var(--2fontcol);
+      color: $secfontcol;
     }
   }
 }

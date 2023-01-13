@@ -1,15 +1,22 @@
 .our-team-box {
   padding: 94px;
-  background: var(--2bgcol);
+  background: $secbgcol;
+  .display-style {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+    box-sizing: border-box;
+  }
   .work-position {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--2fontcol);
+    color: $secfontcol;
     text-decoration: none;
     .team-figure-box {
-      background: var(--1bgcol);
+      background: $genbgcol;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
@@ -21,9 +28,9 @@
         justify-content: center;
         list-style: none;
         &__social-media-list {
-          color: var(--3fontcol);
+          color: $thirdfontcol;
           padding: 12px 12px;
-          border: 1px solid var(--1bgcol);
+          border: 1px solid $genbgcol;
           border-radius: 50%;
           margin-top: 16px;
           gap: 10px;
@@ -34,17 +41,17 @@
           }
         }
         &__social-media-list:hover {
-          color: var(--1bgcol);
-          background-color: var(--1activecol);
+          color: $genbgcol;
+          background-color: $genactivecol;
           cursor: pointer;
-          transition: var(--slowmo);
+          transition: $slowmo;
         }
         &__social-media-list:focus {
-          color: var(--1bgcol);
-          background-color: var(--1activecol);
+          color: $genbgcol;
+          background-color: $genactivecol;
           cursor: pointer;
           outline: none;
-          transition: var(--slowmo);
+          transition: $slowmo;
         }
       }
     }

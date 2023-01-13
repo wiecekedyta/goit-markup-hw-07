@@ -3,9 +3,6 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
-  .modal {
-    transform: scale(1);
-  }
 }
 .backdrop {
   position: fixed;
@@ -21,7 +18,7 @@
   .modal {
     width: 528px;
     height: 581px;
-    background: var(--1bgcol);
+    background: $genbgcol;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -31,10 +28,11 @@
     visibility: 1;
     pointer-events: initial;
     transition: transform 500ms ease;
+    transform: scale(1);
     .modal-x-button {
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50%;
-      background: var(--1bgcol);
+      background: $genbgcol;
       padding: 0;
       margin-top: 8px;
       margin-right: 8px;
@@ -59,7 +57,7 @@
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--1fontcol);
+        color: $genfontcol;
       }
       &__label {
         display: flex;
@@ -72,33 +70,39 @@
         font-size: 12px;
         line-height: 1.16;
         letter-spacing: 0.01em;
-        color: var(--2fontcol);
+        color: $secfontcol;
         position: relative;
-      }
-      &__input {
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-      }
-      .input-icon {
-        position: absolute;
-        visibility: visible;
-        bottom: 11px;
-        left: 12px;
-        fill: var(--1fontcol);
-      }
-      &__label input:focus,
-      &__label input:active {
-        border-color: var(--1activecol);
-        outline: none;
-        transition: var(--slowmo);
-      }
-      &__label:active .input-icon {
-        fill: var(--1activecol);
-        transition: var(--slowmo);
-      }
-      &__input:focus + .input-icon {
-        fill: var(--1activecol);
-        transition: var(--slowmo);
+
+        &__input {
+          border: 1px solid rgba(33, 33, 33, 0.2);
+          border-radius: 4px;
+          width: 448px;
+          height: 40px;
+          box-sizing: border-box;
+          margin-top: 4px;
+          padding: 12px 42px;
+        }
+        .input-icon {
+          position: absolute;
+          visibility: visible;
+          bottom: 11px;
+          left: 12px;
+          fill: $genfontcol;
+        }
+        &__input:focus,
+        &__input:active {
+          border-color: $genactivecol;
+          outline: none;
+          transition: $slowmo;
+        }
+        &:active .input-icon {
+          fill: $genactivecol;
+          transition: $slowmo;
+        }
+        &__input:focus + .input-icon {
+          fill: $genactivecol;
+          transition: $slowmo;
+        }
       }
       &__input--textarea {
         width: 448px;
@@ -113,14 +117,14 @@
       }
       &__input--textarea:focus,
       &__input--textarea:active {
-        border-color: var(--1activecol);
+        border-color: $genactivecol;
         outline: none;
-        transition: var(--slowmo);
+        transition: $slowmo;
       }
       &__input--textarea:focus::placeholder,
       &__input--textarea:active::placeholder {
-        color: var(--1activecol);
-        transition: var(--slowmo);
+        color: $genactivecol;
+        transition: $slowmo;
       }
       &__label--reg-checkbox {
         font-family: "Roboto";
@@ -129,7 +133,7 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--2fontcol);
+        color: $secfontcol;
         margin-bottom: 30px;
         align-items: center;
         position: relative;
@@ -138,21 +142,22 @@
         margin-right: 4px;
         visibility: hidden;
         & a {
-          color: var(--1activecol);
+          color: $genactivecol;
         }
       }
+
       .icon-unchecked {
         position: absolute;
         transform: translate(-140%, 25%);
         opacity: 1;
-        transition: var(--slowmo);
+        transition: $slowmo;
       }
       .icon-checked {
         position: absolute;
         z-index: 2;
         transform: translate(-140%, 25%);
         opacity: 0;
-        transition: var(--slowmo);
+        transition: $slowmo;
       }
       &__input--reg-checkbox:checked + .icon-unchecked {
         opacity: 0;
@@ -161,8 +166,8 @@
         opacity: 1;
       }
       &__submit-button {
-        color: var(--1bgcol);
-        background: var(--1activecol);
+        color: $genbgcol;
+        background: $genactivecol;
         border: none;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;

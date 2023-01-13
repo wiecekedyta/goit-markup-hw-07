@@ -10,21 +10,31 @@
       font-size: 26px;
       line-height: 1.19;
       letter-spacing: 0.03em;
-      color: var(--1activecol);
+      color: $genactivecol;
       text-decoration: none;
+
       &--bicolor {
         color: #000;
       }
     }
+
     .address-items {
       margin-top: 20px;
+      .list-style {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        list-style: none;
+      }
       & li {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--1bgcol);
+        color: $genbgcol;
         margin-bottom: 9px;
       }
       &__contact-footer {
@@ -34,13 +44,13 @@
         text-decoration: none;
       }
       &__contact-footer:hover {
-        color: var(--1activecol);
+        color: $genactivecol;
         transition: var(--slowmo);
       }
       &__contact-footer:focus {
-        color: var(--1activecol);
+        color: $genactivecol;
         outline: none;
-        transition: var(--slowmo);
+        transition: $slowmo;
       }
     }
     .footer-social {
@@ -50,7 +60,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--1bgcol);
+        color: $genbgcol;
         margin-bottom: 20px;
       }
       &__list {
@@ -59,7 +69,7 @@
         align-items: center;
         justify-content: center;
         & li {
-          fill: var(--1bgcol);
+          fill: $genbgcol;
           list-style: none;
           gap: 10px;
         }
@@ -67,7 +77,7 @@
           padding: 12px 12px;
           background: rgba(255, 255, 255, 0.1);
           border-radius: 50%;
-          color: var(--1bgcol);
+          color: $genbgcol;
           display: block;
           &--icon {
             display: block;
@@ -75,17 +85,17 @@
           }
         }
         &__link:hover {
-          color: var(--1bgcol);
-          background-color: var(--1activecol);
+          color: $genbgcol;
+          background-color: $genactivecol;
           cursor: pointer;
-          transition: var(--slowmo);
+          transition: $slowmo;
         }
         &__link:focus {
-          color: var(--1bgcol);
-          background-color: var(--1activecol);
+          color: $genbgcol;
+          background-color: $genactivecol;
           cursor: pointer;
           outline: none;
-          transition: var(--slowmo);
+          transition: $slowmo;
         }
       }
     }
@@ -103,14 +113,14 @@
           line-height: 1.14;
           letter-spacing: 0.03em;
           text-transform: uppercase;
-          color: var(--1bgcol);
+          color: $genbgcol;
           width: 358px;
         }
         &__input {
           border: 1px solid rgba(255, 255, 255, 0.3);
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           border-radius: 4px;
-          background-color: var(--3bgcol);
+          background-color: $thirdbgcol;
           color: rgba(255, 255, 255, 0.6);
           padding: 15px;
           margin-top: 20px;
@@ -120,14 +130,14 @@
         }
         &__input:focus,
         &__input:active {
-          border: 1px solid var(--1activecol);
+          border: 1px solid $genactivecol;
           outline: none;
-          transition: var(--slowmo);
+          transition: $slowmo;
         }
         &__input:focus::placeholder,
         &__input:active::placeholder {
-          color: var(--1activecol);
-          transition: var(--slowmo);
+          color: $genactivecol;
+          transition: $slowmo;
         }
         &__submit-button {
           font-family: "Roboto";
@@ -135,8 +145,8 @@
           font-weight: 700;
           font-size: 16px;
           letter-spacing: 0.06em;
-          color: var(--1bgcol);
-          background: var(--1activecol);
+          color: $genbgcol;
+          background: $genactivecol;
           border: none;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           border-radius: 4px;
@@ -150,12 +160,12 @@
           align-items: center;
           gap: 24px;
           .newsletter-icon-send {
-            fill: var(--1bgcol);
+            fill: $genbgcol;
           }
         }
         &__submit-button:hover {
           cursor: pointer;
-          transition: var(--slowmo);
+          transition: $slowmo;
         }
       }
     }

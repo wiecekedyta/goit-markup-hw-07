@@ -110,8 +110,8 @@ ul {
   text-decoration: none;
   margin: 0 23px;
 }
-/*/
-.list-style {
+
+.nav-links-list__nav-items--list-style {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -119,7 +119,7 @@ ul {
   text-decoration: none;
   list-style: none;
 }
-/*/
+
 .nav-links-list__nav-items--list-style:hover {
   color: var(--1activecol);
   transition: var(--slowmo);
@@ -500,6 +500,14 @@ ul {
 
 /* footer */
 
+.list-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  list-style: none;
+}
 .address-items {
   margin-top: 20px;
 }

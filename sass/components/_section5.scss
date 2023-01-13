@@ -5,28 +5,28 @@
     gap: 30px;
     &__icons {
       list-style: none;
-      fill: var(--3fontcol);
+      fill: $thirdfontcol;
       display: flex;
       justify-content: center;
       align-items: center;
       &__button {
-        border: 1px solid var(--3fontcol);
+        border: 1px solid $thirdfontcol;
         border-radius: 4px;
-        background-color: var(--1bgcol);
+        background-color: $genbgcol;
         padding: 16px 32px;
       }
       &__button:hover {
-        fill: var(--1activecol);
+        fill: $genactivecol;
         cursor: pointer;
-        border-color: var(--1activecol);
-        transition: var(--slowmo);
+        border-color: $genactivecol;
+        transition: $slowmo;
       }
       &__button:focus {
-        fill: var(--1activecol);
+        fill: $genactivecol;
         cursor: pointer;
-        border-color: var(--1activecol);
+        border-color: $genactivecol;
         outline: none;
-        transition: var(--slowmo);
+        transition: $slowmo;
       }
     }
   }

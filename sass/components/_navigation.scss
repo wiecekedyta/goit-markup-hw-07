@@ -15,13 +15,14 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--1activecol);
+        color: $genactivecol;
         text-decoration: none;
+
         &--bicolor {
           color: #000;
         }
       }
-      .nav-links-list {
+      &-list {
         display: flex;
         align-items: center;
         padding: 0;
@@ -31,79 +32,89 @@
           text-decoration: none;
           margin: 0 23px;
         }
-        &__nav-items--list-style:hover {
-          color: var(--1activecol);
-          transition: var(--slowmo);
-        }
-        &__nav-items--list-style:focus {
-          color: var(--1activecol);
-          outline: none;
-          transition: var(--slowmo);
-        }
+      }
 
-        &__nav-items--link-color:link,
-        &__nav-items--link-color:visited {
-          color: var(--1fontcol);
-        }
-        &__nav-items--link-color:hover {
-          color: var(--1activecol);
-          transition: var(--slowmo);
-        }
-        &__nav-items--link-color:focus {
-          color: var(--1activecol);
-          outline: none;
-          transition: var(--slowmo);
-        }
-        &__nav-items--underline-active:link::after,
-        &__nav-items--underline-active:visited::after {
-          content: "";
-          height: 4px;
-          display: block;
-          width: 100%;
-          background-color: var(--1activecol);
-          border-radius: 2px;
-          position: relative;
-          top: 30px;
-          color: var(--1activecol);
-        }
-        &__nav-items--underline-active:link,
-        &__nav-items--underline-active:visited {
-          color: var(--1activecol);
+      &-list__nav-items--list-style {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        list-style: none;
+      }
+      &-list__nav-items--list-style:hover {
+        color: $genactivecol;
+        transition: $slowmo;
+      }
+      &-list__nav-items----list-style:focus {
+        color: $genactivecol;
+        outline: none;
+        transition: $slowmo;
+      }
+
+      &-list__nav-items--link-color:link,
+      &-list__nav-items--link-color:visited {
+        color: $genfontcol;
+      }
+      &-list__nav-items--link-color:hover {
+        color: $genactivecol;
+        transition: $slowmo;
+      }
+      &-list__nav-items--link-color:focus {
+        color: $genactivecol;
+        outline: none;
+        transition: $slowmo;
+      }
+      &-list__nav-items--underline-active:link::after,
+      &-list__nav-items--underline-active:visited::after {
+        content: "";
+        height: 4px;
+        display: block;
+        width: 100%;
+        background-color: $genactivecol;
+        border-radius: 2px;
+        position: relative;
+        top: 30px;
+        color: $genactivecol;
+      }
+      &-list__nav-items--underline-active:link,
+      &-list__nav-items--underline-active:visited {
+        color: $genactivecol;
+      }
+    }
+    .nav-contact-list {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      padding-right: 12px;
+
+      .contact-items {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $secfontcol;
+        text-decoration: none;
+        fill: currentColor;
+        &__contact-icon {
+          fill: currentColor;
+          display: inline-flex;
+          align-items: center;
+          align-content: center;
+          vertical-align: middle;
+          padding-right: 10px;
         }
       }
-      .nav-contact-list {
-        display: flex;
-        gap: 50px;
-        align-items: center;
-        padding-right: 12px;
-        .contact-items {
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 1.14;
-          letter-spacing: 0.02em;
-          color: var(--2fontcol);
-          text-decoration: none;
-          fill: currentColor;
-          &__contact-icon {
-            fill: currentColor;
-            display: inline-flex;
-            align-items: center;
-            align-content: center;
-            vertical-align: middle;
-            padding-right: 10px;
-          }
-        }
-        .contact-items:hover {
-          color: var(--1activecol);
-          fill: currentColor;
-          transition: var(--slowmo);
-        }
-        .contact-items:focus {
-          color: var(--1activecol);
-          fill: currentColor;
-          outline: none;
-          transition: var(--slowmo);
-        }
+      .contact-items:hover {
+        color: $genactivecol;
+        fill: currentColor;
+        transition: $slowmo;
+      }
+      .contact-items:focus {
+        color: $genactivecol;
+        fill: currentColor;
+        outline: none;
+        transition: $slowmo;
       }
     }
   }
